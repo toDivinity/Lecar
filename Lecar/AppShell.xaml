@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Lecar.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Lecar"
+    Shell.FlyoutBehavior="Flyout"
+    Title="Справочник лекаря"
+    BackgroundColor="LightGray">
+
+    <!-- Список пациентов -->
+    <ShellContent
+        Title="Список пациентов"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+    
+    <!-- Список болезней -->
+    <ShellContent
+    Title="Список болезней"
+    ContentTemplate="{DataTemplate local:IllnessPage}"
+    Route="IllnessPage" />
+    
+    <!-- Список лекарств -->
+    <ShellContent
+    Title="Список лекарств"
+    ContentTemplate="{DataTemplate local:RemedyPage}"
+    Route="RemedyPage" />
+    <!-- Кнопка выхода -->
+    <MenuItem
+        Text="Выход"
+        Clicked="OnExitButtonClicked"
+        IconImageSource="exit_icon.png" />
+
+</Shell>

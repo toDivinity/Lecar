@@ -1,0 +1,16 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Lecar.AddPatientPage"
+             Title="">
+
+    <StackLayout Padding="10" Spacing="15">
+        <Label Text="Новый пациент" FontSize="24" HorizontalOptions="Center" />
+
+        <Entry x:Name="NameEntry" Placeholder="Введите имя пациента" />
+        <Entry x:Name="AgeEntry" Placeholder="Введите возраст пациента" Keyboard="Numeric" />
+        <Entry x:Name="SymptomsEntry" Placeholder="Введите симптомы пациента" />
+
+        <Button Text="Добавить" Clicked="OnSaveButtonClicked" />
+        <Button Text="Отменить" Clicked="OnCancelButtonClicked" />
+    </StackLayout>
+</ContentPage>
