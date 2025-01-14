@@ -1,12 +1,13 @@
 ﻿using System.Collections.ObjectModel;
+using Lecar.Models;
 
 namespace Lecar;
 
 public partial class AddPatientPage : ContentPage
 {
-    private readonly ObservableCollection<Models.Patient> _patients;
+    private readonly ObservableCollection<Patient> _patients;
 
-    public AddPatientPage(ObservableCollection<Models.Patient> patients)
+    public AddPatientPage(ObservableCollection<Patient> patients)
     {
         InitializeComponent();
         _patients = patients;
@@ -14,19 +15,24 @@ public partial class AddPatientPage : ContentPage
 
     private async void OnSaveButtonClicked(object sender, EventArgs e)
     {
-        var newPatient = new Models.Patient
+        // Создаём нового пациента
+        var newPatient = new Patient
         {
             Name = NameEntry.Text ?? string.Empty,
             Age = int.TryParse(AgeEntry.Text, out var age) ? age : 0,
             Symptoms = SymptomsEntry.Text ?? string.Empty
         };
 
-        // Добавляем в базу данных
-        await App.Database.AddPatientAsync(newPatient);
+        // Добавляем пациента в базу данных через сервис
+        if (App.PatientService != null)
+        {
+            await App.PatientService.AddPatientAsync(newPatient);
+        }
 
         // Обновляем коллекцию
         _patients.Add(newPatient);
 
+        // Возвращаемся на предыдущую страницу
         await Navigation.PopModalAsync();
     }
 

@@ -2,13 +2,28 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Lecar.AddIllnessPage"
-             Title="">
-    <StackLayout Padding="25" Spacing="15">
-        <Entry x:Name="NameEntry" Placeholder="Название болезни" />
-        <Entry x:Name="SymptomsEntry" Placeholder="Симптомы" />
-        <Entry x:Name="RemedyEntry" Placeholder="Лекарство" />
+             Title="Добавить болезнь">
+    <ScrollView>
+        <StackLayout Padding="25" Spacing="10">
+            <Entry x:Name="NameEntry" Placeholder="Название болезни" />
 
-        <Button Text="Сохранить" Clicked="OnSaveButtonClicked" />
-        <Button Text="Отмена" Clicked="OnCancelButtonClicked" />
-    </StackLayout>
+            <Label Text="Симптомы" FontSize="18" FontAttributes="Bold" />
+
+            <!-- Список симптомов -->
+            <CollectionView ItemsSource="{Binding Symptoms}" SelectionMode="None">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout Orientation="Horizontal" Padding="5">
+                            <CheckBox IsChecked="{Binding IsSelected}" />
+                            <Label Text="{Binding Name}" VerticalOptions="Center" />
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+            <!-- Кнопки -->
+            <Button Text="Сохранить" Clicked="OnSaveButtonClicked" Margin="0,20,0,0" />
+            <Button Text="Отмена" Clicked="OnCancelButtonClicked" Margin="0,10,0,0" />
+        </StackLayout>
+    </ScrollView>
 </ContentPage>

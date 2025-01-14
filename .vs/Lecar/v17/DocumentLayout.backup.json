@@ -1,85 +1,141 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Divinity\\source\\git\\lecar\\",
+  "WorkspaceRootPath": "C:\\Users\\Divinity\\source\\repos\\Lecar-main\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|c:\\users\\divinity\\source\\git\\lecar\\lecar\\patientpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|solutionrelative:lecar\\patientpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|c:\\users\\divinity\\source\\git\\lecar\\lecar\\illnesspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|solutionrelative:lecar\\illnesspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|c:\\users\\divinity\\source\\git\\lecar\\lecar\\illnesspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|solutionrelative:lecar\\illnesspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|c:\\users\\divinity\\source\\git\\lecar\\lecar\\patientpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|solutionrelative:lecar\\patientpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|c:\\users\\divinity\\source\\git\\lecar\\lecar\\remedypage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|solutionrelative:lecar\\remedypage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|c:\\users\\divinity\\source\\git\\lecar\\lecar\\addpatientpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|solutionrelative:lecar\\addpatientpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|c:\\users\\divinity\\source\\git\\lecar\\lecar\\services\\databaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|solutionrelative:lecar\\services\\databaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|c:\\users\\divinity\\source\\git\\lecar\\lecar\\addpatientpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|solutionrelative:lecar\\addpatientpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|c:\\users\\divinity\\source\\git\\lecar\\lecar\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|solutionrelative:lecar\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|c:\\users\\divinity\\source\\git\\lecar\\lecar\\models\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|solutionrelative:lecar\\models\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|c:\\users\\divinity\\source\\git\\lecar\\lecar\\addremedypage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|solutionrelative:lecar\\addremedypage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|c:\\users\\divinity\\source\\git\\lecar\\lecar\\addremedypage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|solutionrelative:lecar\\addremedypage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|c:\\users\\divinity\\source\\git\\lecar\\lecar\\addillnesspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|c:\\users\\divinity\\source\\repos\\lecar-main\\lecar\\addillnesspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|solutionrelative:lecar\\addillnesspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|c:\\users\\divinity\\source\\git\\lecar\\lecar\\lecar.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|solutionrelative:lecar\\lecar.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|c:\\users\\divinity\\source\\repos\\lecar-main\\lecar\\models\\syptom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|solutionrelative:lecar\\models\\syptom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|c:\\users\\divinity\\source\\git\\lecar\\lecar\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|solutionrelative:lecar\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|c:\\users\\divinity\\source\\git\\lecar\\lecar\\remedypage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|solutionrelative:lecar\\remedypage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|c:\\users\\divinity\\source\\git\\lecar\\lecar\\models\\remedy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|solutionrelative:lecar\\models\\remedy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|c:\\users\\divinity\\source\\git\\lecar\\lecar\\addillnesspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|c:\\users\\divinity\\source\\repos\\lecar-main\\lecar\\addillnesspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|solutionrelative:lecar\\addillnesspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|c:\\users\\divinity\\source\\git\\lecar\\lecar\\models\\illness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|c:\\users\\divinity\\source\\repos\\lecar-main\\lecar\\models\\illness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|solutionrelative:lecar\\models\\illness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Divinity\\source\\git\\lecar\\Lecar\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|c:\\users\\divinity\\source\\repos\\lecar-main\\lecar\\illnesspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|solutionrelative:lecar\\illnesspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|c:\\users\\divinity\\source\\repos\\lecar-main\\lecar\\services\\illnessservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|solutionrelative:lecar\\services\\illnessservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|c:\\users\\divinity\\source\\repos\\lecar-main\\lecar\\illnesspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|solutionrelative:lecar\\illnesspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|c:\\users\\divinity\\source\\repos\\lecar-main\\lecar\\models\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|solutionrelative:lecar\\models\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|c:\\users\\divinity\\source\\repos\\lecar-main\\lecar\\services\\patientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|solutionrelative:lecar\\services\\patientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|c:\\users\\divinity\\source\\repos\\lecar-main\\lecar\\addsymptomspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|solutionrelative:lecar\\addsymptomspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|c:\\users\\divinity\\source\\repos\\lecar-main\\lecar\\remedypage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|solutionrelative:lecar\\remedypage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|c:\\users\\divinity\\source\\repos\\lecar-main\\lecar\\symptomspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|solutionrelative:lecar\\symptomspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|c:\\users\\divinity\\source\\repos\\lecar-main\\lecar\\patientpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|solutionrelative:lecar\\patientpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|c:\\users\\divinity\\source\\repos\\lecar-main\\lecar\\editpatientpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|solutionrelative:lecar\\editpatientpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|c:\\users\\divinity\\source\\repos\\lecar-main\\lecar\\addremedypage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|solutionrelative:lecar\\addremedypage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|c:\\users\\divinity\\source\\repos\\lecar-main\\lecar\\addpatientpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|solutionrelative:lecar\\addpatientpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|c:\\users\\divinity\\source\\repos\\lecar-main\\lecar\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|solutionrelative:lecar\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|c:\\users\\divinity\\source\\repos\\lecar-main\\lecar\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|solutionrelative:lecar\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|c:\\users\\divinity\\source\\repos\\lecar-main\\lecar\\services\\remedyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|solutionrelative:lecar\\services\\remedyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|c:\\users\\divinity\\source\\repos\\lecar-main\\lecar\\services\\symptomservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|solutionrelative:lecar\\services\\symptomservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|c:\\users\\divinity\\source\\repos\\lecar-main\\lecar\\services\\databaseconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|solutionrelative:lecar\\services\\databaseconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|c:\\users\\divinity\\source\\repos\\lecar-main\\lecar\\symptomspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|solutionrelative:lecar\\symptomspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|c:\\users\\divinity\\source\\repos\\lecar-main\\lecar\\models\\remedy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|solutionrelative:lecar\\models\\remedy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|c:\\users\\divinity\\source\\repos\\lecar-main\\lecar\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|solutionrelative:lecar\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|c:\\users\\divinity\\source\\repos\\lecar-main\\lecar\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|solutionrelative:lecar\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|c:\\users\\divinity\\source\\repos\\lecar-main\\lecar\\addsymptomspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|solutionrelative:lecar\\addsymptomspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|c:\\users\\divinity\\source\\repos\\lecar-main\\lecar\\patientpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|solutionrelative:lecar\\patientpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|c:\\users\\divinity\\source\\repos\\lecar-main\\lecar\\remedypage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|solutionrelative:lecar\\remedypage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|c:\\users\\divinity\\source\\repos\\lecar-main\\lecar\\editpatientpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|solutionrelative:lecar\\editpatientpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|c:\\users\\divinity\\source\\repos\\lecar-main\\lecar\\addremedypage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|solutionrelative:lecar\\addremedypage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|c:\\users\\divinity\\source\\repos\\lecar-main\\lecar\\addpatientpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|solutionrelative:lecar\\addpatientpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|c:\\users\\divinity\\source\\repos\\lecar-main\\lecar\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|solutionrelative:lecar\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|c:\\users\\divinity\\source\\repos\\lecar-main\\lecar\\lecar.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{934B6F16-B878-4A79-A077-CB04DD5EC645}|Lecar\\Lecar.csproj|solutionrelative:lecar\\lecar.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Divinity\\source\\repos\\Lecar-main\\Lecar\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Lecar\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -90,7 +146,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -98,125 +154,130 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "AddRemedyPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Divinity\\source\\git\\lecar\\Lecar\\AddRemedyPage.xaml.cs",
-              "RelativeDocumentMoniker": "Lecar\\AddRemedyPage.xaml.cs",
-              "ToolTip": "C:\\Users\\Divinity\\source\\git\\lecar\\Lecar\\AddRemedyPage.xaml.cs",
-              "RelativeToolTip": "Lecar\\AddRemedyPage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-14T05:14:25.543Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "Patient.cs",
-              "DocumentMoniker": "C:\\Users\\Divinity\\source\\git\\lecar\\Lecar\\Models\\Patient.cs",
-              "RelativeDocumentMoniker": "Lecar\\Models\\Patient.cs",
-              "ToolTip": "C:\\Users\\Divinity\\source\\git\\lecar\\Lecar\\Models\\Patient.cs",
-              "RelativeToolTip": "Lecar\\Models\\Patient.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "AddSymptomsPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Divinity\\source\\repos\\Lecar-main\\Lecar\\AddSymptomsPage.xaml.cs",
+              "RelativeDocumentMoniker": "Lecar\\AddSymptomsPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Divinity\\source\\repos\\Lecar-main\\Lecar\\AddSymptomsPage.xaml.cs",
+              "RelativeToolTip": "Lecar\\AddSymptomsPage.xaml.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAYwCgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-14T04:48:32.691Z"
+              "WhenOpened": "2025-01-14T20:54:12.835Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "DatabaseService.cs",
-              "DocumentMoniker": "C:\\Users\\Divinity\\source\\git\\lecar\\Lecar\\Services\\DatabaseService.cs",
-              "RelativeDocumentMoniker": "Lecar\\Services\\DatabaseService.cs",
-              "ToolTip": "C:\\Users\\Divinity\\source\\git\\lecar\\Lecar\\Services\\DatabaseService.cs",
-              "RelativeToolTip": "Lecar\\Services\\DatabaseService.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB0AAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-14T04:53:35.504Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "AppShell.xaml",
-              "DocumentMoniker": "C:\\Users\\Divinity\\source\\git\\lecar\\Lecar\\AppShell.xaml",
-              "RelativeDocumentMoniker": "Lecar\\AppShell.xaml",
-              "ToolTip": "C:\\Users\\Divinity\\source\\git\\lecar\\Lecar\\AppShell.xaml",
-              "RelativeToolTip": "Lecar\\AppShell.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAeAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "AddIllnessPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Divinity\\source\\repos\\Lecar-main\\Lecar\\AddIllnessPage.xaml",
+              "RelativeDocumentMoniker": "Lecar\\AddIllnessPage.xaml",
+              "ToolTip": "C:\\Users\\Divinity\\source\\repos\\Lecar-main\\Lecar\\AddIllnessPage.xaml",
+              "RelativeToolTip": "Lecar\\AddIllnessPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-14T05:09:08.468Z",
+              "WhenOpened": "2025-01-14T04:53:03.811Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AddIllnessPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Divinity\\source\\repos\\Lecar-main\\Lecar\\AddIllnessPage.xaml.cs",
+              "RelativeDocumentMoniker": "Lecar\\AddIllnessPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Divinity\\source\\repos\\Lecar-main\\Lecar\\AddIllnessPage.xaml.cs",
+              "RelativeToolTip": "Lecar\\AddIllnessPage.xaml.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAswEEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-14T04:53:17.758Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Syptom.cs",
+              "DocumentMoniker": "C:\\Users\\Divinity\\source\\repos\\Lecar-main\\Lecar\\Models\\Syptom.cs",
+              "RelativeDocumentMoniker": "Lecar\\Models\\Syptom.cs",
+              "ToolTip": "C:\\Users\\Divinity\\source\\repos\\Lecar-main\\Lecar\\Models\\Syptom.cs",
+              "RelativeToolTip": "Lecar\\Models\\Syptom.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-14T20:50:51.668Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "IllnessPage.xaml",
-              "DocumentMoniker": "C:\\Users\\Divinity\\source\\git\\lecar\\Lecar\\IllnessPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Divinity\\source\\repos\\Lecar-main\\Lecar\\IllnessPage.xaml",
               "RelativeDocumentMoniker": "Lecar\\IllnessPage.xaml",
-              "ToolTip": "C:\\Users\\Divinity\\source\\git\\lecar\\Lecar\\IllnessPage.xaml",
+              "ToolTip": "C:\\Users\\Divinity\\source\\repos\\Lecar-main\\Lecar\\IllnessPage.xaml",
               "RelativeToolTip": "Lecar\\IllnessPage.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAABHAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-01-14T04:51:44.33Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "RemedyPage.xaml",
-              "DocumentMoniker": "C:\\Users\\Divinity\\source\\git\\lecar\\Lecar\\RemedyPage.xaml",
-              "RelativeDocumentMoniker": "Lecar\\RemedyPage.xaml",
-              "ToolTip": "C:\\Users\\Divinity\\source\\git\\lecar\\Lecar\\RemedyPage.xaml",
-              "RelativeToolTip": "Lecar\\RemedyPage.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-14T05:13:38.289Z"
+              "DocumentIndex": 5,
+              "Title": "IllnessService.cs",
+              "DocumentMoniker": "C:\\Users\\Divinity\\source\\repos\\Lecar-main\\Lecar\\Services\\IllnessService.cs",
+              "RelativeDocumentMoniker": "Lecar\\Services\\IllnessService.cs",
+              "ToolTip": "C:\\Users\\Divinity\\source\\repos\\Lecar-main\\Lecar\\Services\\IllnessService.cs",
+              "RelativeToolTip": "Lecar\\Services\\IllnessService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-14T21:41:30.897Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PatientPage.xaml",
-              "DocumentMoniker": "C:\\Users\\Divinity\\source\\git\\lecar\\Lecar\\PatientPage.xaml",
-              "RelativeDocumentMoniker": "Lecar\\PatientPage.xaml",
-              "ToolTip": "C:\\Users\\Divinity\\source\\git\\lecar\\Lecar\\PatientPage.xaml*",
-              "RelativeToolTip": "Lecar\\PatientPage.xaml*",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAgwC0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-14T05:28:29.613Z",
+              "DocumentIndex": 3,
+              "Title": "Illness.cs",
+              "DocumentMoniker": "C:\\Users\\Divinity\\source\\repos\\Lecar-main\\Lecar\\Models\\Illness.cs",
+              "RelativeDocumentMoniker": "Lecar\\Models\\Illness.cs",
+              "ToolTip": "C:\\Users\\Divinity\\source\\repos\\Lecar-main\\Lecar\\Models\\Illness.cs",
+              "RelativeToolTip": "Lecar\\Models\\Illness.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-14T04:48:34.289Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PatientService.cs",
+              "DocumentMoniker": "C:\\Users\\Divinity\\source\\repos\\Lecar-main\\Lecar\\Services\\PatientService.cs",
+              "RelativeDocumentMoniker": "Lecar\\Services\\PatientService.cs",
+              "ToolTip": "C:\\Users\\Divinity\\source\\repos\\Lecar-main\\Lecar\\Services\\PatientService.cs",
+              "RelativeToolTip": "Lecar\\Services\\PatientService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-14T21:41:18.826Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "AddPatientPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Divinity\\source\\git\\lecar\\Lecar\\AddPatientPage.xaml.cs",
-              "RelativeDocumentMoniker": "Lecar\\AddPatientPage.xaml.cs",
-              "ToolTip": "C:\\Users\\Divinity\\source\\git\\lecar\\Lecar\\AddPatientPage.xaml.cs",
-              "RelativeToolTip": "Lecar\\AddPatientPage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
+              "Title": "Patient.cs",
+              "DocumentMoniker": "C:\\Users\\Divinity\\source\\repos\\Lecar-main\\Lecar\\Models\\Patient.cs",
+              "RelativeDocumentMoniker": "Lecar\\Models\\Patient.cs",
+              "ToolTip": "C:\\Users\\Divinity\\source\\repos\\Lecar-main\\Lecar\\Models\\Patient.cs",
+              "RelativeToolTip": "Lecar\\Models\\Patient.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-14T05:21:51.584Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PatientPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Divinity\\source\\git\\lecar\\Lecar\\PatientPage.xaml.cs",
-              "RelativeDocumentMoniker": "Lecar\\PatientPage.xaml.cs",
-              "ToolTip": "C:\\Users\\Divinity\\source\\git\\lecar\\Lecar\\PatientPage.xaml.cs",
-              "RelativeToolTip": "Lecar\\PatientPage.xaml.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAQwCwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-14T05:29:05.896Z",
+              "WhenOpened": "2025-01-14T04:48:32.691Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "IllnessPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Divinity\\source\\git\\lecar\\Lecar\\IllnessPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Divinity\\source\\repos\\Lecar-main\\Lecar\\IllnessPage.xaml.cs",
               "RelativeDocumentMoniker": "Lecar\\IllnessPage.xaml.cs",
-              "ToolTip": "C:\\Users\\Divinity\\source\\git\\lecar\\Lecar\\IllnessPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Divinity\\source\\repos\\Lecar-main\\Lecar\\IllnessPage.xaml.cs",
               "RelativeToolTip": "Lecar\\IllnessPage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABoAAAAAAAAAAAAnwC4AAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-14T04:52:28.511Z",
               "EditorCaption": ""
@@ -224,70 +285,166 @@
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "AddRemedyPage.xaml",
-              "DocumentMoniker": "C:\\Users\\Divinity\\source\\git\\lecar\\Lecar\\AddRemedyPage.xaml",
-              "RelativeDocumentMoniker": "Lecar\\AddRemedyPage.xaml",
-              "ToolTip": "C:\\Users\\Divinity\\source\\git\\lecar\\Lecar\\AddRemedyPage.xaml",
-              "RelativeToolTip": "Lecar\\AddRemedyPage.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-14T05:14:15.905Z"
+              "Title": "SymptomsPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Divinity\\source\\repos\\Lecar-main\\Lecar\\SymptomsPage.xaml.cs",
+              "RelativeDocumentMoniker": "Lecar\\SymptomsPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Divinity\\source\\repos\\Lecar-main\\Lecar\\SymptomsPage.xaml.cs",
+              "RelativeToolTip": "Lecar\\SymptomsPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-14T20:49:38.218Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AddPatientPage.xaml",
-              "DocumentMoniker": "C:\\Users\\Divinity\\source\\git\\lecar\\Lecar\\AddPatientPage.xaml",
-              "RelativeDocumentMoniker": "Lecar\\AddPatientPage.xaml",
-              "ToolTip": "C:\\Users\\Divinity\\source\\git\\lecar\\Lecar\\AddPatientPage.xaml",
-              "RelativeToolTip": "Lecar\\AddPatientPage.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-14T05:01:49.432Z"
+              "DocumentIndex": 10,
+              "Title": "RemedyPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Divinity\\source\\repos\\Lecar-main\\Lecar\\RemedyPage.xaml.cs",
+              "RelativeDocumentMoniker": "Lecar\\RemedyPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Divinity\\source\\repos\\Lecar-main\\Lecar\\RemedyPage.xaml.cs",
+              "RelativeToolTip": "Lecar\\RemedyPage.xaml.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAkwDQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-14T05:13:46.112Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "AddIllnessPage.xaml",
-              "DocumentMoniker": "C:\\Users\\Divinity\\source\\git\\lecar\\Lecar\\AddIllnessPage.xaml",
-              "RelativeDocumentMoniker": "Lecar\\AddIllnessPage.xaml",
-              "ToolTip": "C:\\Users\\Divinity\\source\\git\\lecar\\Lecar\\AddIllnessPage.xaml",
-              "RelativeToolTip": "Lecar\\AddIllnessPage.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-14T04:53:03.811Z"
+              "Title": "PatientPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Divinity\\source\\repos\\Lecar-main\\Lecar\\PatientPage.xaml.cs",
+              "RelativeDocumentMoniker": "Lecar\\PatientPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Divinity\\source\\repos\\Lecar-main\\Lecar\\PatientPage.xaml.cs",
+              "RelativeToolTip": "Lecar\\PatientPage.xaml.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAswD8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-14T05:29:05.896Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
-              "Title": "Lecar.csproj",
-              "DocumentMoniker": "C:\\Users\\Divinity\\source\\git\\lecar\\Lecar\\Lecar.csproj",
-              "RelativeDocumentMoniker": "Lecar\\Lecar.csproj",
-              "ToolTip": "C:\\Users\\Divinity\\source\\git\\lecar\\Lecar\\Lecar.csproj",
-              "RelativeToolTip": "Lecar\\Lecar.csproj",
-              "ViewState": "AgIAACoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-01-14T05:18:25.602Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "AddIllnessPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Divinity\\source\\git\\lecar\\Lecar\\AddIllnessPage.xaml.cs",
-              "RelativeDocumentMoniker": "Lecar\\AddIllnessPage.xaml.cs",
-              "ToolTip": "C:\\Users\\Divinity\\source\\git\\lecar\\Lecar\\AddIllnessPage.xaml.cs",
-              "RelativeToolTip": "Lecar\\AddIllnessPage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAABMAAAAAAAAAA==",
+              "Title": "EditPatientPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Divinity\\source\\repos\\Lecar-main\\Lecar\\EditPatientPage.xaml.cs",
+              "RelativeDocumentMoniker": "Lecar\\EditPatientPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Divinity\\source\\repos\\Lecar-main\\Lecar\\EditPatientPage.xaml.cs",
+              "RelativeToolTip": "Lecar\\EditPatientPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-14T04:53:17.758Z"
+              "WhenOpened": "2025-01-14T14:13:35.405Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 14,
+              "Title": "AddRemedyPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Divinity\\source\\repos\\Lecar-main\\Lecar\\AddRemedyPage.xaml.cs",
+              "RelativeDocumentMoniker": "Lecar\\AddRemedyPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Divinity\\source\\repos\\Lecar-main\\Lecar\\AddRemedyPage.xaml.cs",
+              "RelativeToolTip": "Lecar\\AddRemedyPage.xaml.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAA7wDMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-14T05:14:25.543Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AddPatientPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Divinity\\source\\repos\\Lecar-main\\Lecar\\AddPatientPage.xaml.cs",
+              "RelativeDocumentMoniker": "Lecar\\AddPatientPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Divinity\\source\\repos\\Lecar-main\\Lecar\\AddPatientPage.xaml.cs",
+              "RelativeToolTip": "Lecar\\AddPatientPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-14T05:21:51.584Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Divinity\\source\\repos\\Lecar-main\\Lecar\\App.xaml.cs",
+              "RelativeDocumentMoniker": "Lecar\\App.xaml.cs",
+              "ToolTip": "C:\\Users\\Divinity\\source\\repos\\Lecar-main\\Lecar\\App.xaml.cs",
+              "RelativeToolTip": "Lecar\\App.xaml.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwBwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-14T21:02:20.754Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AppShell.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Divinity\\source\\repos\\Lecar-main\\Lecar\\AppShell.xaml.cs",
+              "RelativeDocumentMoniker": "Lecar\\AppShell.xaml.cs",
+              "ToolTip": "C:\\Users\\Divinity\\source\\repos\\Lecar-main\\Lecar\\AppShell.xaml.cs",
+              "RelativeToolTip": "Lecar\\AppShell.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-14T13:59:43.445Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "RemedyService.cs",
+              "DocumentMoniker": "C:\\Users\\Divinity\\source\\repos\\Lecar-main\\Lecar\\Services\\RemedyService.cs",
+              "RelativeDocumentMoniker": "Lecar\\Services\\RemedyService.cs",
+              "ToolTip": "C:\\Users\\Divinity\\source\\repos\\Lecar-main\\Lecar\\Services\\RemedyService.cs",
+              "RelativeToolTip": "Lecar\\Services\\RemedyService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-14T21:41:57.521Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "SymptomService.cs",
+              "DocumentMoniker": "C:\\Users\\Divinity\\source\\repos\\Lecar-main\\Lecar\\Services\\SymptomService.cs",
+              "RelativeDocumentMoniker": "Lecar\\Services\\SymptomService.cs",
+              "ToolTip": "C:\\Users\\Divinity\\source\\repos\\Lecar-main\\Lecar\\Services\\SymptomService.cs",
+              "RelativeToolTip": "Lecar\\Services\\SymptomService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-14T21:41:44.512Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "DatabaseConnection.cs",
+              "DocumentMoniker": "C:\\Users\\Divinity\\source\\repos\\Lecar-main\\Lecar\\Services\\DatabaseConnection.cs",
+              "RelativeDocumentMoniker": "Lecar\\Services\\DatabaseConnection.cs",
+              "ToolTip": "C:\\Users\\Divinity\\source\\repos\\Lecar-main\\Lecar\\Services\\DatabaseConnection.cs",
+              "RelativeToolTip": "Lecar\\Services\\DatabaseConnection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-14T21:41:04.274Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "AppShell.xaml",
+              "DocumentMoniker": "C:\\Users\\Divinity\\source\\repos\\Lecar-main\\Lecar\\AppShell.xaml",
+              "RelativeDocumentMoniker": "Lecar\\AppShell.xaml",
+              "ToolTip": "C:\\Users\\Divinity\\source\\repos\\Lecar-main\\Lecar\\AppShell.xaml",
+              "RelativeToolTip": "Lecar\\AppShell.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-14T05:09:08.468Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
               "Title": "App.xaml",
-              "DocumentMoniker": "C:\\Users\\Divinity\\source\\git\\lecar\\Lecar\\App.xaml",
+              "DocumentMoniker": "C:\\Users\\Divinity\\source\\repos\\Lecar-main\\Lecar\\App.xaml",
               "RelativeDocumentMoniker": "Lecar\\App.xaml",
-              "ToolTip": "C:\\Users\\Divinity\\source\\git\\lecar\\Lecar\\App.xaml",
+              "ToolTip": "C:\\Users\\Divinity\\source\\repos\\Lecar-main\\Lecar\\App.xaml",
               "RelativeToolTip": "Lecar\\App.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
@@ -295,47 +452,131 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "RemedyPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Divinity\\source\\git\\lecar\\Lecar\\RemedyPage.xaml.cs",
-              "RelativeDocumentMoniker": "Lecar\\RemedyPage.xaml.cs",
-              "ToolTip": "C:\\Users\\Divinity\\source\\git\\lecar\\Lecar\\RemedyPage.xaml.cs",
-              "RelativeToolTip": "Lecar\\RemedyPage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-14T05:13:46.112Z"
+              "DocumentIndex": 26,
+              "Title": "PatientPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Divinity\\source\\repos\\Lecar-main\\Lecar\\PatientPage.xaml",
+              "RelativeDocumentMoniker": "Lecar\\PatientPage.xaml",
+              "ToolTip": "C:\\Users\\Divinity\\source\\repos\\Lecar-main\\Lecar\\PatientPage.xaml",
+              "RelativeToolTip": "Lecar\\PatientPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-14T05:28:29.613Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Illness.cs",
-              "DocumentMoniker": "C:\\Users\\Divinity\\source\\git\\lecar\\Lecar\\Models\\Illness.cs",
-              "RelativeDocumentMoniker": "Lecar\\Models\\Illness.cs",
-              "ToolTip": "C:\\Users\\Divinity\\source\\git\\lecar\\Lecar\\Models\\Illness.cs",
-              "RelativeToolTip": "Lecar\\Models\\Illness.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-14T04:48:34.289Z"
+              "DocumentIndex": 27,
+              "Title": "RemedyPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Divinity\\source\\repos\\Lecar-main\\Lecar\\RemedyPage.xaml",
+              "RelativeDocumentMoniker": "Lecar\\RemedyPage.xaml",
+              "ToolTip": "C:\\Users\\Divinity\\source\\repos\\Lecar-main\\Lecar\\RemedyPage.xaml",
+              "RelativeToolTip": "Lecar\\RemedyPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-14T05:13:38.289Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 21,
+              "Title": "SymptomsPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Divinity\\source\\repos\\Lecar-main\\Lecar\\SymptomsPage.xaml",
+              "RelativeDocumentMoniker": "Lecar\\SymptomsPage.xaml",
+              "ToolTip": "C:\\Users\\Divinity\\source\\repos\\Lecar-main\\Lecar\\SymptomsPage.xaml",
+              "RelativeToolTip": "Lecar\\SymptomsPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-14T13:59:27.843Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
               "Title": "Remedy.cs",
-              "DocumentMoniker": "C:\\Users\\Divinity\\source\\git\\lecar\\Lecar\\Models\\Remedy.cs",
+              "DocumentMoniker": "C:\\Users\\Divinity\\source\\repos\\Lecar-main\\Lecar\\Models\\Remedy.cs",
               "RelativeDocumentMoniker": "Lecar\\Models\\Remedy.cs",
-              "ToolTip": "C:\\Users\\Divinity\\source\\git\\lecar\\Lecar\\Models\\Remedy.cs",
+              "ToolTip": "C:\\Users\\Divinity\\source\\repos\\Lecar-main\\Lecar\\Models\\Remedy.cs",
               "RelativeToolTip": "Lecar\\Models\\Remedy.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-14T04:48:02.258Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 25,
+              "Title": "AddSymptomsPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Divinity\\source\\repos\\Lecar-main\\Lecar\\AddSymptomsPage.xaml",
+              "RelativeDocumentMoniker": "Lecar\\AddSymptomsPage.xaml",
+              "ToolTip": "C:\\Users\\Divinity\\source\\repos\\Lecar-main\\Lecar\\AddSymptomsPage.xaml",
+              "RelativeToolTip": "Lecar\\AddSymptomsPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-14T20:54:03.413Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "EditPatientPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Divinity\\source\\repos\\Lecar-main\\Lecar\\EditPatientPage.xaml",
+              "RelativeDocumentMoniker": "Lecar\\EditPatientPage.xaml",
+              "ToolTip": "C:\\Users\\Divinity\\source\\repos\\Lecar-main\\Lecar\\EditPatientPage.xaml",
+              "RelativeToolTip": "Lecar\\EditPatientPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-14T14:13:26.068Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "AddRemedyPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Divinity\\source\\repos\\Lecar-main\\Lecar\\AddRemedyPage.xaml",
+              "RelativeDocumentMoniker": "Lecar\\AddRemedyPage.xaml",
+              "ToolTip": "C:\\Users\\Divinity\\source\\repos\\Lecar-main\\Lecar\\AddRemedyPage.xaml",
+              "RelativeToolTip": "Lecar\\AddRemedyPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-14T05:14:15.905Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "AddPatientPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Divinity\\source\\repos\\Lecar-main\\Lecar\\AddPatientPage.xaml",
+              "RelativeDocumentMoniker": "Lecar\\AddPatientPage.xaml",
+              "ToolTip": "C:\\Users\\Divinity\\source\\repos\\Lecar-main\\Lecar\\AddPatientPage.xaml",
+              "RelativeToolTip": "Lecar\\AddPatientPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-14T05:01:49.432Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\Divinity\\source\\repos\\Lecar-main\\Lecar\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Lecar\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\Divinity\\source\\repos\\Lecar-main\\Lecar\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Lecar\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-14T13:28:05.688Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Lecar.csproj",
+              "DocumentMoniker": "C:\\Users\\Divinity\\source\\repos\\Lecar-main\\Lecar\\Lecar.csproj",
+              "RelativeDocumentMoniker": "Lecar\\Lecar.csproj",
+              "ToolTip": "C:\\Users\\Divinity\\source\\repos\\Lecar-main\\Lecar\\Lecar.csproj",
+              "RelativeToolTip": "Lecar\\Lecar.csproj",
+              "ViewState": "AgIAACMAAAAAAAAAAMBdwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-01-14T05:18:25.602Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
               "Title": "App.g.i.cs",
-              "DocumentMoniker": "C:\\Users\\Divinity\\source\\git\\lecar\\Lecar\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs",
+              "DocumentMoniker": "C:\\Users\\Divinity\\source\\repos\\Lecar-main\\Lecar\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs",
               "RelativeDocumentMoniker": "Lecar\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs",
-              "ToolTip": "C:\\Users\\Divinity\\source\\git\\lecar\\Lecar\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs",
+              "ToolTip": "C:\\Users\\Divinity\\source\\repos\\Lecar-main\\Lecar\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs",
               "RelativeToolTip": "Lecar\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\Platforms\\Windows\\App.g.i.cs",
               "ViewState": "AgIAAC8AAAAAAAAAAAAEwEQAAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

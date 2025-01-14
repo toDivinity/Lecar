@@ -1,29 +1,60 @@
 ﻿using System.Collections.ObjectModel;
+using Lecar.Models;
 
 namespace Lecar;
 
 public partial class AddIllnessPage : ContentPage
 {
-    private ObservableCollection<Models.Illness> _illnesses;
+    private readonly ObservableCollection<Illness> _illnesses;
+    public ObservableCollection<Symptom> Symptoms { get; set; } = new();
 
-    public AddIllnessPage(ObservableCollection<Models.Illness> illnesses)
+    public AddIllnessPage(ObservableCollection<Illness> illnesses)
     {
         InitializeComponent();
         _illnesses = illnesses;
+
+        // Привязываем список симптомов
+        BindingContext = this;
+
+        // Загружаем симптомы из базы данных
+        LoadSymptoms();
+    }
+
+    private async void LoadSymptoms()
+    {
+        if (App.SymptomService != null)
+        {
+            var symptoms = await App.SymptomService.GetSymptomsAsync();
+            foreach (var symptom in symptoms)
+            {
+                Symptoms.Add(new Symptom
+                {
+                    Id = symptom.Id,
+                    Name = symptom.Name,
+                    IsSelected = false // Устанавливаем начальное состояние
+                });
+            }
+        }
     }
 
     private async void OnSaveButtonClicked(object sender, EventArgs e)
     {
-        var newIllness = new Models.Illness
+        // Создаём новую болезнь
+        var newIllness = new Illness
         {
             Name = NameEntry.Text ?? string.Empty,
-            Symptoms = SymptomsEntry.Text ?? string.Empty,
-            Remedy = RemedyEntry.Text ?? string.Empty
+            Symptoms = Symptoms.Where(s => s.IsSelected).Select(s => s.Name).ToList()
         };
 
-        // Добавляем болезнь в коллекцию и возвращаемся
+        // Добавляем болезнь в коллекцию
         _illnesses.Add(newIllness);
-        await App.Database.AddIllnessAsync(newIllness); // Сохранение в базу данных
+
+        // Сохраняем болезнь в базу данных
+        if (App.IllnessService != null)
+        {
+            await App.IllnessService.AddIllnessAsync(newIllness);
+        }
+
         await Navigation.PopModalAsync();
     }
 

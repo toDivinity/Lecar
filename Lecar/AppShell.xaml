@@ -10,21 +10,28 @@
 
     <!-- Список пациентов -->
     <ShellContent
-        Title="Список пациентов"
+        Title="Журнал"
         ContentTemplate="{DataTemplate local:PatientPage}"
         Route="PatientPage" />
     
-    <!-- Список болезней -->
-    <ShellContent
-    Title="Список болезней"
-    ContentTemplate="{DataTemplate local:IllnessPage}"
-    Route="IllnessPage" />
-    
     <!-- Список лекарств -->
     <ShellContent
-    Title="Список лекарств"
+    Title="Склад"
     ContentTemplate="{DataTemplate local:RemedyPage}"
     Route="RemedyPage" />
+    
+    <!-- Список болезней -->
+    <ShellContent
+        Title="Болезни"
+        ContentTemplate="{DataTemplate local:IllnessPage}"
+        Route="IllnessPage" />
+
+    <!-- Список симптомов -->
+    <ShellContent
+         Title="Симптомы"
+         ContentTemplate="{DataTemplate local:SymptomsPage}"
+         Route="SymptomsPage" />
+
     <!-- Кнопка выхода -->
     <MenuItem
         Text="Выход"

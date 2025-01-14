@@ -5,21 +5,37 @@ namespace Lecar;
 
 public partial class App : Application
 {
-    public static DatabaseService? Database { get; private set; }
+    public static string DatabasePath { get; private set; }
+    public static DatabaseConnection? DatabaseConnection { get; private set; }
+    public static PatientService? PatientService { get; private set; }
+    public static IllnessService? IllnessService { get; private set; }
+    public static SymptomService? SymptomService { get; private set; }
+    public static RemedyService? RemedyService { get; private set; }
 
     public App()
     {
         InitializeComponent();
 
-        string dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Lecar.db");
-        Database = new DatabaseService(dbPath);
+        // Укажите путь к базе данных
+        DatabasePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Lecar.db");
+        InitializeDatabase();
+    }
+
+    private void InitializeDatabase()
+    {
+        // Инициализация подключения к базе данных
+        DatabaseConnection = new DatabaseConnection(DatabasePath);
+        var connection = DatabaseConnection.GetConnection();
+
+        // Инициализация сервисов
+        PatientService = new PatientService(connection);
+        IllnessService = new IllnessService(connection);
+        SymptomService = new SymptomService(connection);
+        RemedyService = new RemedyService(connection);
     }
 
     protected override Window CreateWindow(IActivationState? activationState)
     {
-        string dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Lecar.db");
-        Database = new DatabaseService(dbPath);
-
         return new Window(new AppShell());
     }
 }

@@ -1,10 +1,11 @@
 ﻿using System.Collections.ObjectModel;
+using Lecar.Models;
 
 namespace Lecar;
 
 public partial class IllnessPage : ContentPage
 {
-    public ObservableCollection<Models.Illness> Illnesses { get; set; } = new();
+    public ObservableCollection<Illness> Illnesses { get; set; } = new();
 
     public IllnessPage()
     {
@@ -17,10 +18,13 @@ public partial class IllnessPage : ContentPage
 
     private async void LoadIllnesses()
     {
-        var illnesses = await App.Database.GetIllnessesAsync();
-        foreach (var illness in illnesses)
+        if (App.IllnessService != null)
         {
-            Illnesses.Add(illness);
+            var illnesses = await App.IllnessService.GetIllnessesAsync();
+            foreach (var illness in illnesses)
+            {
+                Illnesses.Add(illness);
+            }
         }
     }
 
@@ -32,13 +36,16 @@ public partial class IllnessPage : ContentPage
     private async void OnDeleteIllnessClicked(object sender, EventArgs e)
     {
         // Получаем болезнь из параметра кнопки
-        if (sender is Button button && button.CommandParameter is Models.Illness illness)
+        if (sender is Button button && button.CommandParameter is Illness illness)
         {
             // Удаляем болезнь из коллекции
             Illnesses.Remove(illness);
 
-            // Удаляем болезнь из базы данных
-            await App.Database.DeleteIllnessAsync(illness);
+            // Удаляем болезнь из базы данных через сервис
+            if (App.IllnessService != null)
+            {
+                await App.IllnessService.DeleteIllnessAsync(illness);
+            }
         }
     }
 }

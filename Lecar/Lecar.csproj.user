@@ -15,6 +15,12 @@
     <MauiXaml Update="AddRemedyPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="AddSymptomsPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="EditPatientPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="IllnessPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
@@ -22,6 +28,9 @@
       <SubType>Designer</SubType>
     </MauiXaml>
     <MauiXaml Update="RemedyPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="SymptomsPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
   </ItemGroup>

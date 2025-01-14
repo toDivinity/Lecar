@@ -2,44 +2,51 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Lecar.PatientPage"
-             Title="Список Пациентов">
+             Title="Журнал">
     <StackLayout Padding="10" Spacing="15">
 
-        <ListView x:Name="PatientListView" HasUnevenRows="True" ItemsSource="{Binding Patients}">
+        <ListView x:Name="PatientListView" 
+                  HasUnevenRows="True" 
+                  ItemsSource="{Binding Patients}">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
-                        <Frame Margin="5" Padding="10" BorderColor="LightGray" CornerRadius="10">
-                            <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
-                                <Label Text="{Binding Name}" FontSize="18" />
+                        <Frame Margin="5" 
+                               Padding="10" 
+                               BorderColor="LightGray" 
+                               CornerRadius="10">
+                            <Grid RowDefinitions="Auto,Auto,Auto,Auto" ColumnDefinitions="*,Auto">
+                                <!-- Имя пациента -->
+                                <Label Grid.Row="0" Grid.Column="0" Text="{Binding Name}" FontSize="18" />
 
-                                <!-- Горизонтальное расположение для возраста -->
-                                <StackLayout Orientation="Horizontal">
+                                <!-- Возраст -->
+                                <StackLayout Grid.Row="1" Grid.Column="0" Orientation="Horizontal">
                                     <Label Text="Возраст: " FontSize="14" TextColor="Gray" />
                                     <Label Text="{Binding Age}" FontSize="14" TextColor="Gray" />
                                 </StackLayout>
 
-                                <!-- Горизонтальное расположение для симптомов -->
-                                <StackLayout Orientation="Horizontal">
+                                <!-- Симптомы -->
+                                <StackLayout Grid.Row="2" Grid.Column="0" Orientation="Horizontal">
                                     <Label Text="Симптомы: " FontSize="14" TextColor="Gray" />
                                     <Label Text="{Binding Symptoms}" FontSize="14" TextColor="Gray" />
                                 </StackLayout>
 
                                 <!-- Кнопка удаления -->
-                                <Button Text="Удалить"
+                                <Button Grid.Row="3" Grid.Column="0" Text="Удалить"
                                         BackgroundColor="Red"
                                         TextColor="White"
                                         WidthRequest="100"
                                         HeightRequest="40"
                                         CommandParameter="{Binding .}"
                                         Clicked="OnDeletePatientClicked" />
-                            </StackLayout>
+                            </Grid>
                         </Frame>
                     </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
 
+        <!-- Кнопка добавления -->
         <Button Text="Добавить" Clicked="OnAddPatientClicked" />
     </StackLayout>
 </ContentPage>

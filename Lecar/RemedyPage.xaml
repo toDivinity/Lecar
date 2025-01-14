@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Lecar.RemedyPage"
-             Title="Список лекарств">
+             Title="Склад">
     <StackLayout Padding="10">
 
         <ListView x:Name="RemedyListView" HasUnevenRows="True" ItemsSource="{Binding Remedies}">
@@ -12,10 +12,22 @@
                         <StackLayout Orientation="Horizontal" Padding="10">
                             <StackLayout Orientation="Vertical" HorizontalOptions="StartAndExpand">
                                 <Label Text="{Binding Name}" FontSize="18" />
+                                
                                 <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand">
                                     <Label Text="Болезни: " FontSize="14" TextColor="Gray" />
                                     <Label Text="{Binding Illness}" FontSize="14" TextColor="Gray" />
                                 </StackLayout>
+                                
+                                <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand">
+                                    <Label Text="Колличество: " FontSize="14" TextColor="Gray" />
+                                    <Label Text="{Binding Unit}" FontSize="14" TextColor="Gray" />
+                                </StackLayout>
+                                
+                                <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand">
+                                    <Label Text="Взаимозаменяемые лекарства: " FontSize="14" TextColor="Gray" />
+                                    <Label Text="{Binding ReplaceableRemedy}" FontSize="14" TextColor="Gray" />
+                                </StackLayout>
+                                
                             </StackLayout>
                             <Button Text="Удалить"
                                     BackgroundColor="Red"

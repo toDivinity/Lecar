@@ -1,10 +1,11 @@
 ﻿using System.Collections.ObjectModel;
+using Lecar.Models;
 
 namespace Lecar;
 
 public partial class RemedyPage : ContentPage
 {
-    public ObservableCollection<Models.Remedy> Remedies { get; set; } = new();
+    public ObservableCollection<Remedy> Remedies { get; set; } = new();
 
     public RemedyPage()
     {
@@ -17,28 +18,35 @@ public partial class RemedyPage : ContentPage
 
     private async void LoadRemedies()
     {
-        var remedies = await App.Database.GetRemediesAsync();
-        foreach (var remedy in remedies)
+        if (App.RemedyService != null)
         {
-            Remedies.Add(remedy);
+            var remedies = await App.RemedyService.GetRemediesAsync();
+            foreach (var remedy in remedies)
+            {
+                Remedies.Add(remedy);
+            }
         }
     }
 
     private async void OnAddRemedyClicked(object sender, EventArgs e)
     {
+        // Открываем страницу добавления лекарства
         await Navigation.PushModalAsync(new AddRemedyPage(Remedies));
     }
 
     private async void OnDeleteRemedyClicked(object sender, EventArgs e)
     {
         // Получаем лекарство из параметра кнопки
-        if (sender is Button button && button.CommandParameter is Models.Remedy remedy)
+        if (sender is Button button && button.CommandParameter is Remedy remedy)
         {
             // Удаляем лекарство из коллекции
             Remedies.Remove(remedy);
 
-            // Удаляем лекарство из базы данных
-            await App.Database.DeleteRemedyAsync(remedy);
+            // Удаляем лекарство из базы данных через сервис
+            if (App.RemedyService != null)
+            {
+                await App.RemedyService.DeleteRemedyAsync(remedy);
+            }
         }
     }
 }

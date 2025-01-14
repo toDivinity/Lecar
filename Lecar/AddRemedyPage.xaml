@@ -6,7 +6,9 @@
     <StackLayout Padding="25" Spacing="15">
         <Label Text="Добавить Лекарство" FontSize="24" HorizontalOptions="Center" />
         <Entry x:Name="NameEntry" Placeholder="Название лекарства" />
+        <Entry x:Name="UnitEntry" Placeholder="Колличество" />
         <Entry x:Name="IllnessEntry" Placeholder="Связанная болезнь" />
+        <Entry x:Name="ReplaceableRemedyEntry" Placeholder="Взаимозаменяемые лекарства" />
         <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="20">
             <Button Text="Сохранить" Clicked="OnSaveButtonClicked" />
             <Button Text="Отмена" Clicked="OnCancelButtonClicked" />

@@ -1,10 +1,11 @@
 ﻿using System.Collections.ObjectModel;
+using Lecar.Models;
 
 namespace Lecar;
 
 public partial class PatientPage : ContentPage
 {
-    public ObservableCollection<Models.Patient> Patients { get; set; } = new();
+    public ObservableCollection<Patient> Patients { get; set; } = new();
 
     public PatientPage()
     {
@@ -17,10 +18,13 @@ public partial class PatientPage : ContentPage
 
     private async void LoadPatients()
     {
-        var patients = await App.Database.GetPatientsAsync();
-        foreach (var patient in patients)
+        if (App.PatientService != null)
         {
-            Patients.Add(patient);
+            var patients = await App.PatientService.GetPatientsAsync();
+            foreach (var patient in patients)
+            {
+                Patients.Add(patient);
+            }
         }
     }
 
@@ -32,13 +36,28 @@ public partial class PatientPage : ContentPage
     private async void OnDeletePatientClicked(object sender, EventArgs e)
     {
         // Получаем пациента из параметра кнопки
-        if (sender is Button button && button.CommandParameter is Models.Patient patient)
+        if (sender is Button button && button.CommandParameter is Patient patient)
         {
             // Удаляем пациента из коллекции
             Patients.Remove(patient);
 
-            // Удаляем пациента из базы данных
-            await App.Database.DeletePatientAsync(patient);
+            // Удаляем пациента из базы данных через сервис
+            if (App.PatientService != null)
+            {
+                await App.PatientService.DeletePatientAsync(patient);
+            }
         }
+    }
+
+    private async void OnPatientSelected(object sender, SelectedItemChangedEventArgs e)
+    {
+        if (e.SelectedItem is Patient selectedPatient)
+        {
+            // Открываем страницу редактирования
+            await Navigation.PushModalAsync(new EditPatientPage(selectedPatient));
+        }
+
+        // Сбрасываем выделение
+        ((ListView)sender).SelectedItem = null;
     }
 }

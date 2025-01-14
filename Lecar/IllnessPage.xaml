@@ -2,25 +2,18 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Lecar.IllnessPage"
-             Title="Список Болезней">
+             Title="Болезни">
     <StackLayout Padding="25">
         <ListView x:Name="IllnessListView" HasUnevenRows="True" ItemsSource="{Binding Illnesses}">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
-                        <StackLayout Orientation="Horizontal" Padding="10">
-                            <StackLayout Orientation="Vertical" HorizontalOptions="StartAndExpand">
-                                <Label Text="{Binding Name}" FontSize="18" />
-                                <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand">
-                                    <Label Text="Cимптомы: " FontSize="14" TextColor="Gray" />
-                                    <Label Text="{Binding Symptoms}" FontSize="14" TextColor="Gray" />
-                                </StackLayout>
-                                <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand">
-                                    <Label Text="Лекарства: " FontSize="14" TextColor="Gray" />
-                                    <Label Text="{Binding Remedy}" FontSize="14" TextColor="Gray" />
-                                </StackLayout>
-                                
-                            </StackLayout>
+                        <StackLayout Orientation="Vertical" Padding="10">
+                            <Label Text="{Binding Name}" FontSize="18" />
+
+                            <Label Text="Симптомы:" FontSize="14" TextColor="Gray" />
+                            <Label Text="{Binding SymptomsDisplay}" FontSize="14" TextColor="Gray" />
+
                             <Button Text="Удалить"
                                     BackgroundColor="Red"
                                     TextColor="White"
