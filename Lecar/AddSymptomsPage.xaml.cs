@@ -15,10 +15,17 @@ public partial class AddSymptomPage : ContentPage
 
     private async void OnSaveButtonClicked(object sender, EventArgs e)
     {
+        // Проверка на корректное заполнение имени
+        if (string.IsNullOrWhiteSpace(SymptomNameEntry.Text))
+        {
+            await DisplayAlert("Ошибка", "Пожалуйста, введите название симптома.", "ОК");
+            return;
+        }
+
         // Создаем новый симптом
         var newSymptom = new Symptom
         {
-            Name = SymptomNameEntry.Text?.Trim() ?? string.Empty
+            Name = SymptomNameEntry.Text.Trim()
         };
 
         // Добавляем в базу данных через сервис

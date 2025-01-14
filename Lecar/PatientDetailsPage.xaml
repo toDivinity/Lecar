@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Lecar.PatientDetailsPage"
+             Title="Данные пациента"
+             BackgroundColor="#F9F9F9">
+    <ScrollView>
+        <StackLayout Padding="20" Spacing="20">
+            <!-- Карточка с данными пациента -->
+            <Frame CornerRadius="15" Padding="20" BackgroundColor="White" HasShadow="True">
+                <StackLayout Spacing="15">
+                    <!-- Имя -->
+                    <StackLayout Orientation="Vertical" Spacing="5">
+                        <Label Text="Имя" FontSize="16" FontAttributes="Bold" TextColor="#333" />
+                        <Label Text="{Binding Name}" FontSize="18" TextColor="#555" />
+                    </StackLayout>
+
+                    <!-- Возраст -->
+                    <StackLayout Orientation="Vertical" Spacing="5">
+                        <Label Text="Возраст" FontSize="16" FontAttributes="Bold" TextColor="#333" />
+                        <Label Text="{Binding Age}" FontSize="18" TextColor="#555" />
+                    </StackLayout>
+
+                    <!-- Симптомы -->
+                    <StackLayout Orientation="Vertical" Spacing="5">
+                        <Label Text="Симптомы" FontSize="16" FontAttributes="Bold" TextColor="#333" />
+                        <Label Text="{Binding Symptoms}" FontSize="18" TextColor="#555" />
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

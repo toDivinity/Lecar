@@ -6,10 +6,21 @@
         {
             InitializeComponent();
         }
-        private void OnExitButtonClicked(object sender, EventArgs e)
+
+        private async void OnExitButtonClicked(object sender, EventArgs e)
         {
-            // Проверяем, что Application.Current не равен null
-            Application.Current?.Quit();
+            // Отображение диалога подтверждения
+            bool confirm = await Application.Current.MainPage.DisplayAlert(
+                "Выход из приложения",
+                "Вы уверены, что хотите выйти?",
+                "Да",
+                "Нет");
+
+            // Если пользователь подтвердил, выходим из приложения
+            if (confirm)
+            {
+                Application.Current?.Quit();
+            }
         }
     }
 }

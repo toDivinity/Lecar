@@ -78,10 +78,10 @@
 	  <MauiXaml Update="AddSymptomsPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="EditPatientPage.xaml">
+	  <MauiXaml Update="IllnessPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="IllnessPage.xaml">
+	  <MauiXaml Update="PatientDetailsPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="PatientPage.xaml">

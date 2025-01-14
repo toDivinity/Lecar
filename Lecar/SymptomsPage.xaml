@@ -2,25 +2,62 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Lecar.SymptomsPage"
-             Title="Симптомы">
-    <StackLayout Padding="10" Spacing="15">
+             Title="Симптомы"
+             BackgroundColor="#f9f9f9">
+    <ScrollView>
+        <StackLayout Padding="15" Spacing="20">
 
-        <!-- Список симптомов -->
-        <ListView x:Name="SymptomsListView"
-                  ItemsSource="{Binding Symptoms}"
-                  HasUnevenRows="True">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <ViewCell>
-                        <Frame Margin="5" Padding="10" BorderColor="LightGray" CornerRadius="10">
-                            <Label Text="{Binding Name}" FontSize="18" />
+            <!-- Заголовок -->
+            <Label Text="Список симптомов"
+                   FontSize="24"
+                   FontAttributes="Bold"
+                   TextColor="#333"
+                   HorizontalOptions="Center" />
+
+            <!-- Список симптомов -->
+            <CollectionView x:Name="SymptomsListView"
+                            ItemsSource="{Binding Symptoms}"
+                            SelectionMode="None">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame Margin="5"
+                               Padding="15"
+                               BorderColor="#e0e0e0"
+                               BackgroundColor="White"
+                               CornerRadius="15"
+                               HasShadow="True">
+                            <Grid ColumnDefinitions="*,Auto" VerticalOptions="Center">
+                                <!-- Имя симптома -->
+                                <Label Text="{Binding Name}"
+                                       FontSize="18"
+                                       TextColor="#333"
+                                       VerticalOptions="Center" />
+
+                                <!-- Кнопка удаления -->
+                                <Button Text="Удалить"
+                                        CommandParameter="{Binding Id}"
+                                        Clicked="OnDeleteSymptomClicked"
+                                        BackgroundColor="#ff4d4d"
+                                        TextColor="White"
+                                        CornerRadius="10"
+                                        Padding="10"
+                                        HorizontalOptions="End"
+                                        VerticalOptions="Center" />
+                            </Grid>
                         </Frame>
-                    </ViewCell>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
 
-        <!-- Кнопка добавления -->
-        <Button Text="Добавить симптом" Clicked="OnAddSymptomClicked" />
-    </StackLayout>
+            <!-- Кнопка добавления -->
+            <Button Text="Добавить симптом"
+                    Clicked="OnAddSymptomClicked"
+                    BackgroundColor="#4caf50"
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    CornerRadius="10"
+                    Padding="15"
+                    HorizontalOptions="Fill" />
+        </StackLayout>
+    </ScrollView>
 </ContentPage>

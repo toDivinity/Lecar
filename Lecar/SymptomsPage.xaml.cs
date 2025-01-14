@@ -21,6 +21,7 @@ public partial class SymptomsPage : ContentPage
         if (App.SymptomService != null)
         {
             var symptoms = await App.SymptomService.GetSymptomsAsync();
+            Symptoms.Clear();
             foreach (var symptom in symptoms)
             {
                 Symptoms.Add(symptom);
@@ -28,9 +29,22 @@ public partial class SymptomsPage : ContentPage
         }
     }
 
+
     private async void OnAddSymptomClicked(object sender, EventArgs e)
     {
         // Открываем страницу добавления симптома
         await Navigation.PushModalAsync(new AddSymptomPage(Symptoms));
+    }
+    private async void OnDeleteSymptomClicked(object sender, EventArgs e)
+    {
+        if (sender is Button button && button.CommandParameter is int symptomId)
+        {
+            bool confirm = await DisplayAlert("Удаление", "Вы уверены, что хотите удалить этот симптом?", "Да", "Нет");
+            if (confirm && App.SymptomService != null)
+            {
+                await App.SymptomService.DeleteSymptomAsync(symptomId);
+                LoadSymptoms(); // Обновить список после удаления
+            }
+        }
     }
 }

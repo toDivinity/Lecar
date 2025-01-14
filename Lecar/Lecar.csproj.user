@@ -18,10 +18,10 @@
     <MauiXaml Update="AddSymptomsPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="EditPatientPage.xaml">
+    <MauiXaml Update="IllnessPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="IllnessPage.xaml">
+    <MauiXaml Update="PatientDetailsPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
     <MauiXaml Update="PatientPage.xaml">

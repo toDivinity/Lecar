@@ -38,26 +38,36 @@ public partial class PatientPage : ContentPage
         // Получаем пациента из параметра кнопки
         if (sender is Button button && button.CommandParameter is Patient patient)
         {
-            // Удаляем пациента из коллекции
-            Patients.Remove(patient);
+            // Показываем подтверждение удаления
+            bool confirm = await DisplayAlert(
+                "Удаление пациента",
+                $"Вы уверены, что хотите удалить пациента {patient.Name}?",
+                "Да",
+                "Нет");
 
-            // Удаляем пациента из базы данных через сервис
-            if (App.PatientService != null)
+            if (confirm)
             {
-                await App.PatientService.DeletePatientAsync(patient);
+                // Удаляем пациента из коллекции
+                Patients.Remove(patient);
+
+                // Удаляем пациента из базы данных через сервис
+                if (App.PatientService != null)
+                {
+                    await App.PatientService.DeletePatientAsync(patient);
+                }
             }
         }
     }
 
-    private async void OnPatientSelected(object sender, SelectedItemChangedEventArgs e)
+    private async void OnPatientSelected(object sender, SelectionChangedEventArgs e)
     {
-        if (e.SelectedItem is Patient selectedPatient)
+        if (e.CurrentSelection.FirstOrDefault() is Patient selectedPatient)
         {
-            // Открываем страницу редактирования
-            await Navigation.PushModalAsync(new EditPatientPage(selectedPatient));
+            // Открываем страницу с данными пациента
+            await Navigation.PushAsync(new PatientDetailsPage(selectedPatient));
         }
 
         // Сбрасываем выделение
-        ((ListView)sender).SelectedItem = null;
+        ((CollectionView)sender).SelectedItem = null;
     }
 }

@@ -15,12 +15,33 @@ public partial class AddPatientPage : ContentPage
 
     private async void OnSaveButtonClicked(object sender, EventArgs e)
     {
+        // Проверка на заполненность имени
+        if (string.IsNullOrWhiteSpace(NameEntry.Text))
+        {
+            await DisplayAlert("Ошибка", "Пожалуйста, введите имя пациента.", "ОК");
+            return;
+        }
+
+        // Проверка на корректность возраста
+        if (!int.TryParse(AgeEntry.Text, out var age) || age <= 0)
+        {
+            await DisplayAlert("Ошибка", "Пожалуйста, введите корректный возраст (целое число больше нуля).", "ОК");
+            return;
+        }
+
+        // Проверка на заполненность симптомов
+        if (string.IsNullOrWhiteSpace(SymptomsEntry.Text))
+        {
+            await DisplayAlert("Ошибка", "Пожалуйста, введите симптомы пациента.", "ОК");
+            return;
+        }
+
         // Создаём нового пациента
         var newPatient = new Patient
         {
-            Name = NameEntry.Text ?? string.Empty,
-            Age = int.TryParse(AgeEntry.Text, out var age) ? age : 0,
-            Symptoms = SymptomsEntry.Text ?? string.Empty
+            Name = NameEntry.Text.Trim(),
+            Age = age,
+            Symptoms = SymptomsEntry.Text.Trim()
         };
 
         // Добавляем пациента в базу данных через сервис

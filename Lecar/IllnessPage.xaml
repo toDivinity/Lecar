@@ -2,29 +2,72 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Lecar.IllnessPage"
-             Title="Болезни">
-    <StackLayout Padding="25">
-        <ListView x:Name="IllnessListView" HasUnevenRows="True" ItemsSource="{Binding Illnesses}">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <ViewCell>
-                        <StackLayout Orientation="Vertical" Padding="10">
-                            <Label Text="{Binding Name}" FontSize="18" />
+             Title="Болезни"
+             BackgroundColor="#f9f9f9">
+    <ScrollView>
+        <StackLayout Padding="20" Spacing="20">
 
-                            <Label Text="Симптомы:" FontSize="14" TextColor="Gray" />
-                            <Label Text="{Binding SymptomsDisplay}" FontSize="14" TextColor="Gray" />
+            <!-- Заголовок -->
+            <Label Text="Список болезней"
+                   FontSize="24"
+                   FontAttributes="Bold"
+                   TextColor="#333"
+                   HorizontalOptions="Center" />
 
-                            <Button Text="Удалить"
-                                    BackgroundColor="Red"
-                                    TextColor="White"
-                                    CommandParameter="{Binding .}"
-                                    Clicked="OnDeleteIllnessClicked" />
-                        </StackLayout>
-                    </ViewCell>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
+            <!-- Список болезней -->
+            <CollectionView x:Name="IllnessListView" 
+                            ItemsSource="{Binding Illnesses}"
+                            SelectionMode="None">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame Margin="0,10"
+                               Padding="15"
+                               BorderColor="#e0e0e0"
+                               BackgroundColor="White"
+                               CornerRadius="15"
+                               HasShadow="True">
+                            <StackLayout Spacing="10">
+                                <!-- Название болезни -->
+                                <Label Text="{Binding Name}"
+                                       FontSize="18"
+                                       FontAttributes="Bold"
+                                       TextColor="#333" />
 
-        <Button Text="Добавить" Clicked="OnAddIllnessClicked" />
-    </StackLayout>
+                                <!-- Симптомы -->
+                                <StackLayout>
+                                    <Label Text="Симптомы:"
+                                           FontSize="14"
+                                           FontAttributes="Bold"
+                                           TextColor="#555" />
+                                    <Label Text="{Binding SymptomsDisplay}"
+                                           FontSize="14"
+                                           TextColor="#666" />
+                                </StackLayout>
+
+                                <!-- Кнопка удаления -->
+                                <Button Text="Удалить"
+                                        CommandParameter="{Binding .}"
+                                        Clicked="OnDeleteIllnessClicked"
+                                        BackgroundColor="#ff4d4d"
+                                        TextColor="White"
+                                        CornerRadius="10"
+                                        Padding="10"
+                                        HorizontalOptions="End" />
+                            </StackLayout>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+            <!-- Кнопка добавления -->
+            <Button Text="Добавить болезнь"
+                    Clicked="OnAddIllnessClicked"
+                    BackgroundColor="#4caf50"
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    CornerRadius="10"
+                    Padding="15"
+                    HorizontalOptions="Fill" />
+        </StackLayout>
+    </ScrollView>
 </ContentPage>

@@ -38,13 +38,23 @@ public partial class IllnessPage : ContentPage
         // Получаем болезнь из параметра кнопки
         if (sender is Button button && button.CommandParameter is Illness illness)
         {
-            // Удаляем болезнь из коллекции
-            Illnesses.Remove(illness);
+            // Показываем подтверждение удаления
+            bool confirm = await DisplayAlert(
+                "Удаление болезни",
+                $"Вы уверены, что хотите удалить болезнь \"{illness.Name}\"?",
+                "Да",
+                "Нет");
 
-            // Удаляем болезнь из базы данных через сервис
-            if (App.IllnessService != null)
+            if (confirm)
             {
-                await App.IllnessService.DeleteIllnessAsync(illness);
+                // Удаляем болезнь из коллекции
+                Illnesses.Remove(illness);
+
+                // Удаляем болезнь из базы данных через сервис
+                if (App.IllnessService != null)
+                {
+                    await App.IllnessService.DeleteIllnessAsync(illness);
+                }
             }
         }
     }

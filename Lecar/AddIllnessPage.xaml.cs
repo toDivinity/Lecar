@@ -39,11 +39,26 @@ public partial class AddIllnessPage : ContentPage
 
     private async void OnSaveButtonClicked(object sender, EventArgs e)
     {
+        // Проверка на заполненность названия
+        if (string.IsNullOrWhiteSpace(NameEntry.Text))
+        {
+            await DisplayAlert("Ошибка", "Пожалуйста, введите название болезни.", "ОК");
+            return;
+        }
+
+        // Проверка на наличие выбранных симптомов
+        var selectedSymptoms = Symptoms.Where(s => s.IsSelected).Select(s => s.Name).ToList();
+        if (!selectedSymptoms.Any())
+        {
+            await DisplayAlert("Ошибка", "Пожалуйста, выберите хотя бы один симптом.", "ОК");
+            return;
+        }
+
         // Создаём новую болезнь
         var newIllness = new Illness
         {
-            Name = NameEntry.Text ?? string.Empty,
-            Symptoms = Symptoms.Where(s => s.IsSelected).Select(s => s.Name).ToList()
+            Name = NameEntry.Text.Trim(),
+            Symptoms = selectedSymptoms
         };
 
         // Добавляем болезнь в коллекцию
@@ -55,8 +70,10 @@ public partial class AddIllnessPage : ContentPage
             await App.IllnessService.AddIllnessAsync(newIllness);
         }
 
+        // Возвращаемся на предыдущую страницу
         await Navigation.PopModalAsync();
     }
+
 
     private async void OnCancelButtonClicked(object sender, EventArgs e)
     {

@@ -24,5 +24,12 @@ namespace Lecar.Services
         {
             return _database.InsertAsync(symptom);
         }
+        public Task<int> DeleteSymptomAsync(int id)
+        {
+            return _database.Table<Symptom>()
+                            .Where(s => s.Id == id)
+                            .DeleteAsync();
+        }
+
     }
 }
