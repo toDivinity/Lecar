@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Lecar")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+192b68c522b9f3eaca326545004df51d5596f021")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+806cad1156108e71a573f9ac98701db32286b418")]
 [assembly: System.Reflection.AssemblyProductAttribute("Lecar")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Lecar")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

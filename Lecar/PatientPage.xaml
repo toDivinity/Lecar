@@ -9,21 +9,32 @@
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
-                        <StackLayout Orientation="Vertical" HorizontalOptions="StartAndExpand">
-                            <Label Text="{Binding Name}" FontSize="18" />
+                        <Frame Margin="5" Padding="10" BorderColor="LightGray" CornerRadius="10">
+                            <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
+                                <Label Text="{Binding Name}" FontSize="18" />
 
-                            <!-- Горизонтальное расположение для возраста -->
-                            <StackLayout Orientation="Horizontal">
-                                <Label Text="Возраст: " FontSize="14" TextColor="Gray" />
-                                <Label Text="{Binding Age}" FontSize="14" TextColor="Gray" />
-                            </StackLayout>
+                                <!-- Горизонтальное расположение для возраста -->
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="Возраст: " FontSize="14" TextColor="Gray" />
+                                    <Label Text="{Binding Age}" FontSize="14" TextColor="Gray" />
+                                </StackLayout>
 
-                            <!-- Горизонтальное расположение для симптомов -->
-                            <StackLayout Orientation="Horizontal">
-                                <Label Text="Симптомы: " FontSize="14" TextColor="Gray" />
-                                <Label Text="{Binding Symptoms}" FontSize="14" TextColor="Gray" />
+                                <!-- Горизонтальное расположение для симптомов -->
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="Симптомы: " FontSize="14" TextColor="Gray" />
+                                    <Label Text="{Binding Symptoms}" FontSize="14" TextColor="Gray" />
+                                </StackLayout>
+
+                                <!-- Кнопка удаления -->
+                                <Button Text="Удалить"
+                                        BackgroundColor="Red"
+                                        TextColor="White"
+                                        WidthRequest="100"
+                                        HeightRequest="40"
+                                        CommandParameter="{Binding .}"
+                                        Clicked="OnDeletePatientClicked" />
                             </StackLayout>
-                        </StackLayout>
+                        </Frame>
                     </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>
