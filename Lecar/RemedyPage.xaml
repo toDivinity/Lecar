@@ -2,11 +2,32 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Lecar.RemedyPage"
-             Title="Список лекартсв">
-    <VerticalStackLayout>
-        <Label 
-            Text=""
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             Title="Список лекарств">
+    <StackLayout Padding="10">
+
+        <ListView x:Name="RemedyListView" HasUnevenRows="True" ItemsSource="{Binding Remedies}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal" Padding="10">
+                            <StackLayout Orientation="Vertical" HorizontalOptions="StartAndExpand">
+                                <Label Text="{Binding Name}" FontSize="18" />
+                                <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand">
+                                    <Label Text="Болезни: " FontSize="14" TextColor="Gray" />
+                                    <Label Text="{Binding Illness}" FontSize="14" TextColor="Gray" />
+                                </StackLayout>
+                            </StackLayout>
+                            <Button Text="Удалить"
+                                    BackgroundColor="Red"
+                                    TextColor="White"
+                                    CommandParameter="{Binding .}"
+                                    Clicked="OnDeleteRemedyClicked" />
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <Button Text="Добавить" Clicked="OnAddRemedyClicked" />
+    </StackLayout>
 </ContentPage>

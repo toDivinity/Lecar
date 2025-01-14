@@ -1,52 +1,37 @@
-﻿using Lecar.Models;
+﻿using System.Collections.ObjectModel;
 
 namespace Lecar;
 
 public partial class AddPatientPage : ContentPage
 {
-    public AddPatientPage()
+    private readonly ObservableCollection<Models.Patient> _patients;
+
+    public AddPatientPage(ObservableCollection<Models.Patient> patients)
     {
         InitializeComponent();
+        _patients = patients;
     }
 
     private async void OnSaveButtonClicked(object sender, EventArgs e)
     {
-        // Проверяем, что введены все данные
-        string? name = NameEntry.Text?.Trim();
-        string? ageText = AgeEntry.Text?.Trim();
-        string? symptoms = SymptomsEntry.Text?.Trim();
-
-        if (string.IsNullOrWhiteSpace(name) || string.IsNullOrWhiteSpace(ageText) || string.IsNullOrWhiteSpace(symptoms))
+        var newPatient = new Models.Patient
         {
-            await DisplayAlert("Error", "Пожалуйста, заполните все поля.", "OK");
-            return;
-        }
-
-        if (!int.TryParse(ageText, out int age))
-        {
-            await DisplayAlert("Error", "Возраст задан некорректно.", "OK");
-            return;
-        }
-
-        // Создаем нового пациента
-        var newPatient = new Patient
-        {
-            Name = name,
-            Age = age,
-            Symptoms = symptoms,
-            DateAdded = DateTime.Now
+            Name = NameEntry.Text ?? string.Empty,
+            Age = int.TryParse(AgeEntry.Text, out var age) ? age : 0,
+            Symptoms = SymptomsEntry.Text ?? string.Empty
         };
 
-        // Добавляем пациента в базу данных
+        // Добавляем в базу данных
         await App.Database.AddPatientAsync(newPatient);
 
-        // Закрываем страницу
-        await Navigation.PopAsync();
+        // Обновляем коллекцию
+        _patients.Add(newPatient);
+
+        await Navigation.PopModalAsync();
     }
 
     private async void OnCancelButtonClicked(object sender, EventArgs e)
     {
-        // Закрываем страницу без сохранения
-        await Navigation.PopAsync();
+        await Navigation.PopModalAsync();
     }
 }

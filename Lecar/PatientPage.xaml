@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Lecar.PatientPage"
+             Title="Список Пациентов">
+    <StackLayout Padding="10" Spacing="15">
+
+        <ListView x:Name="PatientListView" HasUnevenRows="True" ItemsSource="{Binding Patients}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Vertical" HorizontalOptions="StartAndExpand">
+                            <Label Text="{Binding Name}" FontSize="18" />
+
+                            <!-- Горизонтальное расположение для возраста -->
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="Возраст: " FontSize="14" TextColor="Gray" />
+                                <Label Text="{Binding Age}" FontSize="14" TextColor="Gray" />
+                            </StackLayout>
+
+                            <!-- Горизонтальное расположение для симптомов -->
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="Симптомы: " FontSize="14" TextColor="Gray" />
+                                <Label Text="{Binding Symptoms}" FontSize="14" TextColor="Gray" />
+                            </StackLayout>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <Button Text="Добавить" Clicked="OnAddPatientClicked" />
+    </StackLayout>
+</ContentPage>

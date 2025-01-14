@@ -2,11 +2,12 @@
 
 namespace Lecar.Models
 {
-    public class Remedy
+    public class Illness
     {
         [PrimaryKey, AutoIncrement]
         public int Id { get; set; }
         public string Name { get; set; } = string.Empty;
-        public string Illness { get; set; } = string.Empty;
+        public string Symptoms { get; set; } = string.Empty;
+        public string Remedy { get; set; } = string.Empty;
     }
 }

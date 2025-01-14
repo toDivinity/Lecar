@@ -5,14 +5,14 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:Lecar"
     Shell.FlyoutBehavior="Flyout"
-    Title="Справочник лекаря"
-    BackgroundColor="LightGray">
+    Title=""
+    BackgroundColor="LightYellow">
 
     <!-- Список пациентов -->
     <ShellContent
         Title="Список пациентов"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+        ContentTemplate="{DataTemplate local:PatientPage}"
+        Route="PatientPage" />
     
     <!-- Список болезней -->
     <ShellContent
