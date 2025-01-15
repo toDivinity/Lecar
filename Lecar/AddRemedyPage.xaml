@@ -2,16 +2,55 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Lecar.AddRemedyPage"
-             Title="Добавить Лекарство">
-    <StackLayout Padding="25" Spacing="15">
-        <Label Text="Добавить Лекарство" FontSize="24" HorizontalOptions="Center" />
-        <Entry x:Name="NameEntry" Placeholder="Название лекарства" />
-        <Entry x:Name="UnitEntry" Placeholder="Колличество" />
-        <Entry x:Name="IllnessEntry" Placeholder="Связанная болезнь" />
-        <Entry x:Name="ReplaceableRemedyEntry" Placeholder="Взаимозаменяемые лекарства" />
-        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="20">
-            <Button Text="Сохранить" Clicked="OnSaveButtonClicked" />
-            <Button Text="Отмена" Clicked="OnCancelButtonClicked" />
+             Title="Добавить Лекарство"
+             BackgroundColor="#f9f9f9">
+    <ScrollView>
+        <StackLayout Padding="25" Spacing="20">
+
+            <!-- Заголовок -->
+            <Label Text="Добавить Лекарство"
+                   FontSize="24"
+                   FontAttributes="Bold"
+                   TextColor="#333"
+                   HorizontalOptions="Center" />
+
+            <!-- Поля ввода -->
+            <StackLayout Spacing="15">
+                <Border BackgroundColor="White" Padding="10">
+                    <Entry x:Name="NameEntry"
+                           Placeholder="Название лекарства"
+                           FontSize="16"
+                           TextColor="#333" />
+                </Border>
+
+                <Border BackgroundColor="White" Padding="10">
+                    <Entry x:Name="UnitEntry"
+                           Placeholder="Количество"
+                           FontSize="16"
+                           Keyboard="Numeric"
+                           TextColor="#333" />
+                </Border>
+            </StackLayout>
+
+            <!-- Кнопки -->
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="20">
+                <Button Text="Сохранить"
+                        Clicked="OnSaveButtonClicked"
+                        BackgroundColor="#4caf50"
+                        TextColor="White"
+                        FontAttributes="Bold"
+                        CornerRadius="10"
+                        Padding="10,5" />
+
+                <Button Text="Отмена"
+                        Clicked="OnCancelButtonClicked"
+                        BackgroundColor="#ff4d4d"
+                        TextColor="White"
+                        FontAttributes="Bold"
+                        CornerRadius="10"
+                        Padding="10,5" />
+            </StackLayout>
+
         </StackLayout>
-    </StackLayout>
+    </ScrollView>
 </ContentPage>

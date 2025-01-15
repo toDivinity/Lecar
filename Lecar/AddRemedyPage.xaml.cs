@@ -15,20 +15,25 @@ public partial class AddRemedyPage : ContentPage
 
     private async void OnSaveButtonClicked(object sender, EventArgs e)
     {
-        // Преобразуем UnitEntry.Text в число
-        int unit = 0;
-        if (!string.IsNullOrWhiteSpace(UnitEntry.Text) && int.TryParse(UnitEntry.Text, out int parsedUnit))
+        // Проверка на заполнение названия
+        if (string.IsNullOrWhiteSpace(NameEntry.Text))
         {
-            unit = parsedUnit;
+            await DisplayAlert("Ошибка", "Пожалуйста, введите название лекарства.", "ОК");
+            return;
+        }
+
+        // Проверка на заполнение количества
+        if (string.IsNullOrWhiteSpace(UnitEntry.Text) || !int.TryParse(UnitEntry.Text, out var unit) || unit < 0)
+        {
+            await DisplayAlert("Ошибка", "Пожалуйста, введите корректное количество (целое число больше нуля).", "ОК");
+            return;
         }
 
         // Создаем новый объект Remedy
         var newRemedy = new Remedy
         {
-            Name = NameEntry.Text ?? string.Empty,
-            Illness = IllnessEntry.Text ?? string.Empty,
-            Unit = unit, // Преобразованное значение
-            ReplaceableRemedy = ReplaceableRemedyEntry.Text ?? string.Empty,
+            Name = NameEntry.Text.Trim(),
+            Unit = unit
         };
 
         // Добавляем в базу данных через сервис

@@ -5,37 +5,63 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:Lecar"
     Shell.FlyoutBehavior="Flyout"
-    Title=""
-    BackgroundColor="LightYellow">
+    BackgroundColor="#FFFFFF"
+    FlyoutBackgroundColor="#F5F5F5"
+    Shell.TitleColor="#1E88E5"
+    Shell.DisabledColor="#BDBDBD"
+    Shell.ForegroundColor="#1E88E5"
+    Shell.TabBarBackgroundColor="#FFFFFF"
+    Shell.TabBarTitleColor="#1E88E5"
+    Shell.TabBarUnselectedColor="#90A4AE">
+
+    <!-- Заголовок меню -->
+    <Shell.FlyoutHeader>
+        <Grid BackgroundColor="#1E88E5" Padding="20">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Image Source="app_logo.png" WidthRequest="50" HeightRequest="50" />
+            <Label Text="Lecar'"
+                   FontSize="40"
+                   TextColor="White"
+                   VerticalOptions="Center"
+                   FontAttributes="Bold"
+                   FontFamily="Courier New"
+                   Grid.Column="1" />
+        </Grid>
+    </Shell.FlyoutHeader>
 
     <!-- Список пациентов -->
     <ShellContent
         Title="Журнал"
         ContentTemplate="{DataTemplate local:PatientPage}"
-        Route="PatientPage" />
-    
+        Route="PatientPage"
+        Icon="journal_icon.png" />
+
     <!-- Список лекарств -->
     <ShellContent
-    Title="Склад"
-    ContentTemplate="{DataTemplate local:RemedyPage}"
-    Route="RemedyPage" />
-    
+        Title="Склад"
+        ContentTemplate="{DataTemplate local:RemedyPage}"
+        Route="RemedyPage"
+        Icon="remedy_icon.png" />
+
     <!-- Список болезней -->
     <ShellContent
         Title="Болезни"
         ContentTemplate="{DataTemplate local:IllnessPage}"
-        Route="IllnessPage" />
+        Route="IllnessPage"
+        Icon="illness_icon.png" />
 
     <!-- Список симптомов -->
     <ShellContent
-         Title="Симптомы"
-         ContentTemplate="{DataTemplate local:SymptomsPage}"
-         Route="SymptomsPage" />
+        Title="Симптомы"
+        ContentTemplate="{DataTemplate local:SymptomsPage}"
+        Route="SymptomsPage"
+        Icon="symptoms_icon.png" />
 
     <!-- Кнопка выхода -->
     <MenuItem
         Text="Выход"
-        Clicked="OnExitButtonClicked"
-        IconImageSource="exit_icon.png" />
-
+        Clicked="OnExitButtonClicked" />
 </Shell>

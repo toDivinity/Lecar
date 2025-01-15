@@ -2,14 +2,43 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Lecar.AddSymptomPage"
-             Title="Добавить симптом">
-    <StackLayout Padding="10" Spacing="15">
+             Title="Добавить симптом"
+             BackgroundColor="#f9f9f9">
+    <StackLayout Padding="20" Spacing="20">
+
+        <!-- Заголовок -->
+        <Label Text="Добавление нового симптома"
+               FontSize="24"
+               FontAttributes="Bold"
+               TextColor="#333"
+               HorizontalOptions="Center" />
 
         <!-- Поле ввода названия симптома -->
-        <Entry x:Name="SymptomNameEntry" Placeholder="Название симптома" />
+        <Border BackgroundColor="White"
+               Padding="10">
+            <Entry x:Name="SymptomNameEntry"
+                   Placeholder="Название симптома"
+                   FontSize="16"
+                   TextColor="#333" />
+        </Border>
 
         <!-- Кнопки -->
-        <Button Text="Сохранить" Clicked="OnSaveButtonClicked" />
-        <Button Text="Отмена" Clicked="OnCancelButtonClicked" />
+        <Button Text="Сохранить"
+                Clicked="OnSaveButtonClicked"
+                BackgroundColor="#4caf50"
+                TextColor="White"
+                FontAttributes="Bold"
+                CornerRadius="10"
+                Padding="15"
+                HorizontalOptions="Fill" />
+
+        <Button Text="Отмена"
+                Clicked="OnCancelButtonClicked"
+                BackgroundColor="#f44336"
+                TextColor="White"
+                FontAttributes="Bold"
+                CornerRadius="10"
+                Padding="15"
+                HorizontalOptions="Fill" />
     </StackLayout>
 </ContentPage>

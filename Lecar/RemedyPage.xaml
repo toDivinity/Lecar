@@ -2,44 +2,66 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Lecar.RemedyPage"
-             Title="Склад">
-    <StackLayout Padding="10">
+             Title="Склад"
+             BackgroundColor="#f9f9f9">
+    <StackLayout Padding="20" Spacing="20">
 
-        <ListView x:Name="RemedyListView" HasUnevenRows="True" ItemsSource="{Binding Remedies}">
-            <ListView.ItemTemplate>
+        <!-- Заголовок -->
+        <Label Text="Склад лекарств"
+               FontSize="24"
+               FontAttributes="Bold"
+               TextColor="#333"
+               HorizontalOptions="Center" />
+
+        <!-- Список лекарств -->
+        <CollectionView x:Name="RemedyListView"
+                        ItemsSource="{Binding Remedies}"
+                        SelectionMode="None">
+            <CollectionView.ItemTemplate>
                 <DataTemplate>
-                    <ViewCell>
-                        <StackLayout Orientation="Horizontal" Padding="10">
-                            <StackLayout Orientation="Vertical" HorizontalOptions="StartAndExpand">
-                                <Label Text="{Binding Name}" FontSize="18" />
-                                
-                                <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand">
-                                    <Label Text="Болезни: " FontSize="14" TextColor="Gray" />
-                                    <Label Text="{Binding Illness}" FontSize="14" TextColor="Gray" />
-                                </StackLayout>
-                                
-                                <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand">
-                                    <Label Text="Колличество: " FontSize="14" TextColor="Gray" />
+                    <Border Margin="5"
+                           Padding="15"
+                           BackgroundColor="White">
+                        <Grid RowDefinitions="Auto,Auto,Auto,Auto" ColumnDefinitions="*,Auto">
+                            <StackLayout Grid.Row="0" Grid.Column="0">
+                                <!-- Название лекарства -->
+                                <Label Text="{Binding Name}"
+                                       FontSize="18"
+                                       FontAttributes="Bold"
+                                       TextColor="#333" />
+
+                                <!-- Количество -->
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="Количество: " FontSize="14" TextColor="Gray" />
                                     <Label Text="{Binding Unit}" FontSize="14" TextColor="Gray" />
                                 </StackLayout>
-                                
-                                <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand">
-                                    <Label Text="Взаимозаменяемые лекарства: " FontSize="14" TextColor="Gray" />
-                                    <Label Text="{Binding ReplaceableRemedy}" FontSize="14" TextColor="Gray" />
-                                </StackLayout>
-                                
-                            </StackLayout>
-                            <Button Text="Удалить"
-                                    BackgroundColor="Red"
-                                    TextColor="White"
-                                    CommandParameter="{Binding .}"
-                                    Clicked="OnDeleteRemedyClicked" />
-                        </StackLayout>
-                    </ViewCell>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
 
-        <Button Text="Добавить" Clicked="OnAddRemedyClicked" />
+                            </StackLayout>
+
+                            <!-- Кнопка удаления -->
+                            <Button Text="Удалить"
+                                    CommandParameter="{Binding .}"
+                                    Clicked="OnDeleteRemedyClicked"
+                                    BackgroundColor="#ff4d4d"
+                                    TextColor="White"
+                                    CornerRadius="10"
+                                    Padding="10"
+                                    HorizontalOptions="End"
+                                    VerticalOptions="Center" />
+                        </Grid>
+                    </Border>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+        <!-- Кнопка добавления -->
+        <Button Text="Добавить лекарство"
+                Clicked="OnAddRemedyClicked"
+                BackgroundColor="#4caf50"
+                TextColor="White"
+                FontAttributes="Bold"
+                CornerRadius="10"
+                Padding="15"
+                HorizontalOptions="Fill" />
     </StackLayout>
 </ContentPage>

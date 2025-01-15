@@ -7,7 +7,7 @@
     <ScrollView>
         <StackLayout Padding="20" Spacing="20">
             <!-- Карточка с данными пациента -->
-            <Frame CornerRadius="15" Padding="20" BackgroundColor="White" HasShadow="True">
+            <Border Padding="20" BackgroundColor="White" >
                 <StackLayout Spacing="15">
                     <!-- Имя -->
                     <StackLayout Orientation="Vertical" Spacing="5">
@@ -27,7 +27,7 @@
                         <Label Text="{Binding Symptoms}" FontSize="18" TextColor="#555" />
                     </StackLayout>
                 </StackLayout>
-            </Frame>
+            </Border>
         </StackLayout>
     </ScrollView>
 </ContentPage>
